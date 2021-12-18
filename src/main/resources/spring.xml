@@ -6,9 +6,10 @@
 
     <bean id="myDataSource" class="com.alibaba.druid.pool.DruidDataSource"
           init-method="init" destroy-method="close">
-        <property name="url" value="jdbc:mysql://localhost:3306/sy4?useSSL=false&amp;serverTimezone=CST"/>
+
+        <property name="url" value="jdbc:mysql://localhost:3307/sy4?useSSL=FALSE&amp;serverTimezone=UTC"/>
         <property name="username" value="root"/>
-        <property name="password" value="sb2143658709"/>
+        <property name="password" value="123456"/>
         <property name="maxActive" value="20"/>
     </bean>
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -19,7 +20,6 @@
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
         <property name="basePackage" value="com.zust.edu.dao"/>
     </bean>
-
     <context:component-scan base-package="com.zust.edu.service"/>
     <tx:annotation-driven/>
 </beans>

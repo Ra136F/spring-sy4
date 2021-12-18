@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: Feng
   Date: 2021/12/18
-  Time: 16:20
+  Time: 16:26
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -11,11 +11,8 @@
     <title>Title</title>
 </head>
 <body>
-<h2>简易设备资产管理系统</h2>
-<form action="/login" method="post">
-    用户名:<input type="text" name="username"><br>
-    密码:<input type="password" name="psd"><br>
-    <input type="submit" value="用户登录">
-</form>
+<h1>简易设备资产管理</h1>
+欢迎${user.real_name}[普通用户]使用简易系统<button><a href="/loginout" >退出</a></button>
+
 </body>
 </html>
